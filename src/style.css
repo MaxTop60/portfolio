@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'Muller';
+    src: url(./fonts/Fontfabric\ -\ MullerRegular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: url(./fonts/Fontfabric\ -\ MullerMedium.woff2);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: url(./fonts/Fontfabric\ -\ MullerBold.woff2);
+    font-weight: 800;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Muller';
+    overflow: hidden;
+}
+
+#root {
+    background: linear-gradient(245.71deg, #1E0C00 4.96%, #1F0700 33.7%, #170A00 68.41%, #1E0D00 96.42%);
+    height: 100vh;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+    background: linear-gradient(245.71deg, #1E0C00 4.96%, #1F0700 33.7%, #170A00 68.41%, #1E0D00 96.42%);
+}
+
+.header {
+    margin-top: 48px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.header__link:hover {
+    color: #FFA228;
+}
+
+.header__nav_basket-and-login {
+    display: flex;
+    gap: 26px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__login {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    width: 163px;
+    background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.header__login:hover {
+    transform: scale(1.1);
+}
+
+.header__basket {
+    background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.header__basket:hover {
+    transform: scale(1.1);
+}
+
+.header__menu-btn {
+    display: none;
+}
+
+.header__nav_mobile {
+    position: fixed;
+    background-color: #3f1103;
+    width: 250px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    padding: 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+    transform: translateX(290px);
+    transition: 0.5s;
+}
+
+.header__nav_mobile__close {
+    position: absolute;
+    left: 20px;
+    width: 25px;
+}
+
+.header__login_mobile {
+    position: absolute;
+    right: 5px;
+    top: 120px;
+}
+
+@media screen and (max-width: 776px) {
+    .header__nav, .header__login {
+        display: none;
+    }
+
+    .header__login_mobile {
+        display: flex;
+    }
+
+    .header__menu-btn {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .header__logo {
+        width: 113px;
+    }
+
+    .header__basket {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header__basket-img {
+        width: 22px;
+    }
+}
