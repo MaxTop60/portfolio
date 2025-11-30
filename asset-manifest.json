@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5af2caac.css",
-    "main.js": "/portfolio/static/js/main.53488de0.js",
+    "main.css": "/portfolio/static/css/main.d4cc84e4.css",
+    "main.js": "/portfolio/static/js/main.df2cf1d6.js",
     "static/media/pizzashop.png": "/portfolio/static/media/pizzashop.904c247c545dbb2de140.png",
     "static/media/russian_travel.png": "/portfolio/static/media/russian_travel.9a34432ff4f413e051f3.png",
     "static/media/mesto.png": "/portfolio/static/media/mesto.84877edf7949c749b3a9.png",
     "static/media/preview.png": "/portfolio/static/media/preview.ebd8531f2a1c40489c58.png",
+    "static/media/blog_page.png": "/portfolio/static/media/blog_page.00b44fbcd82652e66186.png",
     "static/media/book_store.png": "/portfolio/static/media/book_store.fc79626865cdf87462b2.png",
     "static/media/MuseoSansCyrl-300.woff2": "/portfolio/static/media/MuseoSansCyrl-300.6ea301cff740be2da26a.woff2",
     "static/media/MuseoSansCyrl-500.woff2": "/portfolio/static/media/MuseoSansCyrl-500.a07c2347743e47d3974a.woff2",
     "static/media/MuseoSansCyrl-900.woff2": "/portfolio/static/media/MuseoSansCyrl-900.905f1ef49af35edd897a.woff2",
-    "static/media/html.png": "/portfolio/static/media/html.cfb2ba4a6b1c3de295bc.png",
-    "static/media/css.png": "/portfolio/static/media/css.4a6549b8c2b4cda8bb88.png",
     "static/media/react.svg": "/portfolio/static/media/react.7a4752ec295dfaf32108d52df3ff5704.svg",
-    "static/media/webpack.svg": "/portfolio/static/media/webpack.885a7cfbd800afb69d160913a9a9c736.svg",
+    "static/media/typescript.svg": "/portfolio/static/media/typescript.f33ed7f510871f0a1fa3a3ab03ea5859.svg",
     "static/media/react_router.svg": "/portfolio/static/media/react_router.7f2e263f483c9280a8bd0af2e3c6a4a7.svg",
+    "static/media/js.svg": "/portfolio/static/media/js.6098983a96d80e2c61d90d642d9331a3.svg",
     "static/media/github.svg": "/portfolio/static/media/github.3b4375b1cacddb7910737e992dd73aad.svg",
-    "static/media/js.svg": "/portfolio/static/media/js.081325c6f229605dce15142ddd948d6d.svg",
     "static/media/git.svg": "/portfolio/static/media/git.43d387b77657117c0e407816cbf72476.svg",
     "index.html": "/portfolio/index.html",
     "static/media/telegram.svg": "/portfolio/static/media/telegram.d37f396c3eb867de974f064a21e5b35c.svg",
-    "static/media/vs_code.svg": "/portfolio/static/media/vs_code.c95ccce217b9216b765737214d743d02.svg",
-    "main.5af2caac.css.map": "/portfolio/static/css/main.5af2caac.css.map",
-    "main.53488de0.js.map": "/portfolio/static/js/main.53488de0.js.map"
+    "static/media/css.svg": "/portfolio/static/media/css.b04ad3439070f85fa67601498c11245b.svg",
+    "static/media/html.svg": "/portfolio/static/media/html.6bd7e485f34b7cc0de50a09c8d882bed.svg",
+    "main.d4cc84e4.css.map": "/portfolio/static/css/main.d4cc84e4.css.map",
+    "main.df2cf1d6.js.map": "/portfolio/static/js/main.df2cf1d6.js.map"
   },
   "entrypoints": [
-    "static/css/main.5af2caac.css",
-    "static/js/main.53488de0.js"
+    "static/css/main.d4cc84e4.css",
+    "static/js/main.df2cf1d6.js"
   ]
 }
