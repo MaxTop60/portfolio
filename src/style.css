@@ -41,11 +41,26 @@ h1 {
 }
 
 .header {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    position: fixed;
     display: flex;
     justify-content: end;
+    align-items: center;
+    border-bottom: 1px solid black;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.header_dark {
+    background-color: rgb(28, 28, 34);
 }
 
 .header__theme {
+    position: relative;
+    margin-right: 30px;
     width: 65px;
     height: 30px;
     padding: 2px 4px;
@@ -68,6 +83,7 @@ h1 {
     height: 30px;
     border-radius: 50%;
     transition: 0.4s;
+    transform: scale(0.9);
 }
 
 .header__theme__switch_dark {
@@ -99,10 +115,22 @@ h1 {
     max-width: 700px;
 }
 
+.expirience {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.expirience__title {
+    text-align: center;
+}
+
+.expirience__text {
+    font-size: 20px;
+}
+
 .stack {
     text-align: center;
     margin: 100px auto 0;
-
 }
 
 .stack__list {
@@ -112,19 +140,6 @@ h1 {
     row-gap: 50px;
     align-items: end;
     padding: 0;
-}
-
-.stack__list__item {
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-    margin: auto;
-}
-
-.stack__list__item__img {
-    width: 70px;
 }
 
 .projects {
@@ -197,7 +212,9 @@ h1 {
 
 @media screen and (max-width: 1333px) {
     .preview {
+        margin-top: 100px;
         justify-content: center ;
+        text-align: center;
     }
 }
 

@@ -1,0 +1,15 @@
+.stack__list__item {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin: auto;
+}
+
+
+
+.stack__list__item__img {
+    width: 70px;
+    height: 70px;
+}
