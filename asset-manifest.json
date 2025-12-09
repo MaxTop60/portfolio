@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d4cc84e4.css",
-    "main.js": "/portfolio/static/js/main.df2cf1d6.js",
+    "main.css": "/portfolio/static/css/main.1ffff6f2.css",
+    "main.js": "/portfolio/static/js/main.987fa33f.js",
     "static/media/pizzashop.png": "/portfolio/static/media/pizzashop.904c247c545dbb2de140.png",
     "static/media/russian_travel.png": "/portfolio/static/media/russian_travel.9a34432ff4f413e051f3.png",
     "static/media/mesto.png": "/portfolio/static/media/mesto.84877edf7949c749b3a9.png",
     "static/media/preview.png": "/portfolio/static/media/preview.ebd8531f2a1c40489c58.png",
     "static/media/blog_page.png": "/portfolio/static/media/blog_page.00b44fbcd82652e66186.png",
+    "static/media/sofia_finkel.png": "/portfolio/static/media/sofia_finkel.4915ba2a31cb68a34e14.png",
     "static/media/book_store.png": "/portfolio/static/media/book_store.fc79626865cdf87462b2.png",
     "static/media/MuseoSansCyrl-300.woff2": "/portfolio/static/media/MuseoSansCyrl-300.6ea301cff740be2da26a.woff2",
     "static/media/MuseoSansCyrl-500.woff2": "/portfolio/static/media/MuseoSansCyrl-500.a07c2347743e47d3974a.woff2",
@@ -21,11 +22,11 @@
     "static/media/telegram.svg": "/portfolio/static/media/telegram.d37f396c3eb867de974f064a21e5b35c.svg",
     "static/media/css.svg": "/portfolio/static/media/css.b04ad3439070f85fa67601498c11245b.svg",
     "static/media/html.svg": "/portfolio/static/media/html.6bd7e485f34b7cc0de50a09c8d882bed.svg",
-    "main.d4cc84e4.css.map": "/portfolio/static/css/main.d4cc84e4.css.map",
-    "main.df2cf1d6.js.map": "/portfolio/static/js/main.df2cf1d6.js.map"
+    "main.1ffff6f2.css.map": "/portfolio/static/css/main.1ffff6f2.css.map",
+    "main.987fa33f.js.map": "/portfolio/static/js/main.987fa33f.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4cc84e4.css",
-    "static/js/main.df2cf1d6.js"
+    "static/css/main.1ffff6f2.css",
+    "static/js/main.987fa33f.js"
   ]
 }
