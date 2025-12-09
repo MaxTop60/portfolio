@@ -35,12 +35,17 @@
 .projects__item__img-container {
     position: relative;
     height: 350px;
+    background-color: black;
     text-align: center;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
 }
 
 .projects__item__img {
-    width: 100%;
+    height: 100%;
 }
 
 .projects__item__links {

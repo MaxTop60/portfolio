@@ -3,6 +3,7 @@ import book_store from "../img/projects/book_store.png";
 import mesto from "../img/projects/mesto.png";
 import russian_travel from "../img/projects/russian_travel.png";
 import blog_page from "../img/projects/blog_page.png";
+import sofia_finkel from '../img/projects/sofia_finkel.png'
 
 export type TProject = {
   id: number;
@@ -14,6 +15,14 @@ export type TProject = {
 };
 
 export const projectList: TProject[] = [
+  {
+    id: 6,
+    title: "Sofia Finkel",
+    description:
+      "Заказной проект. Представляет собой сайт-блог, в котором администратора публикует, редактирует и удаляет посты и кейсы.",
+    image: sofia_finkel,
+    websiteLink: 'https://sofia-finkel-site.vercel.app/'
+  },
   {
     id: 5,
     title: "Blog Page",

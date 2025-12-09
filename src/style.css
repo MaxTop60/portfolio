@@ -149,6 +149,10 @@ h1 {
     align-items: center;
 }
 
+.projects__title {
+    text-align: center;
+}
+
 .projects__list {
     list-style-type: none;
     display: flex;
