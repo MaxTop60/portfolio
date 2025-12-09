@@ -1,6 +1,6 @@
 .projects__item {
     position: relative;
-    max-width: 600px;
+    width: 600px;
     box-shadow: 0 0 8px 2px rgba(34, 60, 80, 0.2);
     border-radius: 10px;
     overflow: hidden;
@@ -82,19 +82,25 @@
 
 @media screen and (max-width: 768px) {
     .projects__item {
-        width: 80%;
+        width: 540px;
         margin: auto;
         min-height: auto;
     }
 }
 
 @media screen and (max-width: 560px) {
+    .projects__item {
+        width: 350px;
+    }
     .projects__item__img-container {
         height: 250px;
     }
 }
 
 @media screen and (max-width: 425px) {
+    .projects__item {
+        width: 250px;
+    }
     .projects__item__img-container {
         height: 150px;
     }
