@@ -21,7 +21,7 @@ export const projectList: TProject[] = [
     description:
       "Заказной проект. Представляет собой сайт-блог, в котором администратора публикует, редактирует и удаляет посты и кейсы.",
     image: sofia_finkel,
-    websiteLink: 'https://sofia-finkel-site.vercel.app/'
+    websiteLink: 'https://sofiafinkel.ru'
   },
   {
     id: 5,
