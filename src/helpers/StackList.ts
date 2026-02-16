@@ -7,6 +7,9 @@ import react_router from "../img/icons/react_router.svg";
 import ts from "../img/icons/typescript.svg";
 import redux from "../img/icons/redux.png";
 import vite from "../img/icons/vite.png";
+import python from '../img/icons/python.svg';
+import django from '../img/icons/django.svg'
+import postgresql from '../img/icons/postgresql.svg'
 
 export type TStack = {
   title: string;
@@ -50,4 +53,16 @@ export const StackList = [
     title: "Git",
     img: git,
   },
+  {
+    title: "Python",
+    img: python
+  },
+  {
+    title: "Django",
+    img: django
+  },
+  {
+    title: "PostgreSQL",
+    img: postgresql
+  }
 ];
