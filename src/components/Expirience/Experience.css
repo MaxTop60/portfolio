@@ -43,7 +43,7 @@
 .experience__company {
   font-size: 24px;
   font-weight: 700;
-  background: linear-gradient(135deg, #6a1aff, #ff4d4d);
+  background: #6a1aff;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

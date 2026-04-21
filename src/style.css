@@ -156,7 +156,7 @@ h1 {
 .stat-number {
     font-size: 32px;
     font-weight: 800;
-    background: linear-gradient(135deg, #6a1aff, #ff4d4d);
+    background: #6a1aff;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
