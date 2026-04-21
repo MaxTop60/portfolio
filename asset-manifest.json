@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.fa314af9.css",
-    "main.js": "/portfolio/static/js/main.f51a42cb.js",
+    "main.css": "/portfolio/static/css/main.6a79bb66.css",
+    "main.js": "/portfolio/static/js/main.6227a130.js",
     "static/media/pizzashop.png": "/portfolio/static/media/pizzashop.904c247c545dbb2de140.png",
     "static/media/russian_travel.png": "/portfolio/static/media/russian_travel.9a34432ff4f413e051f3.png",
     "static/media/mesto.png": "/portfolio/static/media/mesto.84877edf7949c749b3a9.png",
@@ -25,11 +25,11 @@
     "static/media/telegram.svg": "/portfolio/static/media/telegram.d37f396c3eb867de974f064a21e5b35c.svg",
     "static/media/css.svg": "/portfolio/static/media/css.28b81d3dc106b117ac51a887b441e715.svg",
     "static/media/html.svg": "/portfolio/static/media/html.adb7591d94e3e641df74ecfa10508cfe.svg",
-    "main.fa314af9.css.map": "/portfolio/static/css/main.fa314af9.css.map",
-    "main.f51a42cb.js.map": "/portfolio/static/js/main.f51a42cb.js.map"
+    "main.6a79bb66.css.map": "/portfolio/static/css/main.6a79bb66.css.map",
+    "main.6227a130.js.map": "/portfolio/static/js/main.6227a130.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa314af9.css",
-    "static/js/main.f51a42cb.js"
+    "static/css/main.6a79bb66.css",
+    "static/js/main.6227a130.js"
   ]
 }
