@@ -168,6 +168,14 @@ h1 {
     color: rgba(255, 255, 255, 0.7);
 }
 
+.light-theme .stat-label {
+    color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.light-theme .stat-card {
+    background: rgba(106, 26, 255, 0.05);
+}
+
 .expirience__text {
     font-size: 20px;
 }

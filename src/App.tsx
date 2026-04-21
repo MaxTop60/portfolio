@@ -84,11 +84,10 @@ function App() {
     <>
       <Preloader isLoading={isLoading} />
       
-      {/* Контент скрыт, пока isLoading === true */}
       <div style={{ display: isLoading ? 'none' : 'block' }}>
         <CustomCursor />
         <Particles />
-        <div className="container">
+        <div className={`container ${!isDarkTheme ? "light-theme" : ""}`}>
           <header className={`header ${isDarkTheme && "header_dark"}`}>
             <div
               className={`header__theme ${isDarkTheme ? "header__theme_dark" : ""}`}
