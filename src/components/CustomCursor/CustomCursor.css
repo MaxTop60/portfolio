@@ -40,3 +40,17 @@
   border-color: rgba(255, 77, 77, 0.6);
   background: rgba(106, 26, 255, 0.1);
 }
+
+@media (max-width: 768px) {
+
+  .custom-cursor,
+  .custom-cursor-follower {
+    display: none;
+    /* ← прячем кастомный курсор на мобилках */
+  }
+
+  * {
+    cursor: auto !important;
+    /* ← восстанавливаем стандартный */
+  }
+}
