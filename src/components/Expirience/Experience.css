@@ -1,0 +1,167 @@
+.experience__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience__item {
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(106, 26, 255, 0.2);
+}
+
+/* Тёмная тема */
+.experience__item_dark {
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+}
+
+/* Светлая тема */
+.experience__item_light {
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(106, 26, 255, 0.3);
+  color: #1a1a1a;
+}
+
+.experience__item:hover {
+  transform: translateY(-4px);
+  border-color: rgba(106, 26, 255, 0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Шапка карточки */
+.experience__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.experience__company {
+  font-size: 24px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #6a1aff, #ff4d4d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 0;
+}
+
+.experience__period {
+  font-size: 14px;
+  font-family: monospace;
+}
+
+.experience__item_dark .experience__period {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.experience__item_light .experience__period {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Должность */
+.experience__position {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.experience__item_dark .experience__position {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.experience__item_light .experience__position {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+/* Стек технологий */
+.experience__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.experience__tech {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.experience__item_dark .experience__tech {
+  background: rgba(106, 26, 255, 0.2);
+  color: #a87cff;
+}
+
+.experience__item_light .experience__tech {
+  background: rgba(106, 26, 255, 0.1);
+  color: #6a1aff;
+}
+
+/* Достижения - исправлено выравнивание */
+.experience__achievements {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience__achievement {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.experience__achievement-icon {
+  color: #6a1aff;
+  font-size: 16px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.experience__achievement-text {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.experience__item_dark .experience__achievement-text {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.experience__item_light .experience__achievement-text {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.experience__achievement-text {
+  flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .experience__item {
+    padding: 20px;
+  }
+
+  .experience__header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .experience__company {
+    font-size: 20px;
+  }
+
+  .experience__position {
+    font-size: 16px;
+  }
+
+  .experience__achievement-text {
+    font-size: 13px;
+  }
+}

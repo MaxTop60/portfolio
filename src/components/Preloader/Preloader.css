@@ -1,0 +1,257 @@
+/* Preloader.css - с полной прорисовкой букв */
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(28, 28, 34);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  transition: opacity 0.6s ease-out, visibility 0.6s ease-out;
+}
+
+.preloader--hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.preloader__content {
+  text-align: center;
+  max-width: 90%;
+  padding: 20px;
+}
+
+/* ========== ЛОГОТИП ========== */
+.preloader__logo {
+  margin-bottom: 40px;
+}
+
+.preloader__logo__svg {
+  display: block;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 25px;
+  filter: drop-shadow(0 0 10px rgba(106, 26, 255, 0.3));
+  animation: softPulse 2s ease infinite;
+}
+
+@keyframes softPulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+/* ===== ПОЛНАЯ ПРОРИСОВКА БУКВ ===== */
+
+/* Буква М - рисуется как пером */
+.preloader__letter-m {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  transition: stroke-dashoffset 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.preloader__letter-m.drawn {
+  stroke-dashoffset: 0;
+}
+
+/* Буква Т - рисуется как пером */
+.preloader__letter-t {
+  stroke-dasharray: 150;
+  stroke-dashoffset: 150;
+  transition: stroke-dashoffset 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.preloader__letter-t.drawn {
+  stroke-dashoffset: 0;
+}
+
+/* Имя и фамилия */
+.preloader__logo__text {
+  text-align: center;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards 1.6s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.preloader__logo__name {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #6a1aff, #ff4d4d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+}
+
+.preloader__logo__surname {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 4px;
+  margin-top: 5px;
+}
+
+/* ========== ПРОГРЕСС-БАР ========== */
+.preloader__progress {
+  width: 320px;
+  max-width: 80%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 40px auto 20px;
+  position: relative;
+}
+
+.preloader__progress__fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6a1aff, #ff4d4d);
+  border-radius: 4px;
+  transition: width 0.05s linear;
+  position: relative;
+}
+
+/* Блик на прогресс-баре */
+.preloader__progress__fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.3),
+      transparent);
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* ========== ПРОЦЕНТЫ ========== */
+.preloader__percentage {
+  font-size: 24px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #6a1aff, #ff4d4d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 25px;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 2px;
+}
+
+/* ========== СТАТУС ========== */
+.preloader__status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'Courier New', monospace;
+}
+
+.preloader__status__text {
+  display: inline-block;
+}
+
+.preloader__status__cursor {
+  animation: blink 1s infinite;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ========== АДАПТАЦИЯ ПОД МОБИЛЬНЫЕ ========== */
+@media screen and (max-width: 768px) {
+  .preloader__logo__svg {
+    width: 120px;
+    height: 120px;
+  }
+
+  .preloader__logo__name {
+    font-size: 22px;
+  }
+
+  .preloader__logo__surname {
+    font-size: 16px;
+  }
+
+  .preloader__progress {
+    width: 250px;
+  }
+
+  .preloader__percentage {
+    font-size: 20px;
+  }
+
+  .preloader__status {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .preloader__logo__svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .preloader__logo__name {
+    font-size: 18px;
+  }
+
+  .preloader__logo__surname {
+    font-size: 14px;
+  }
+
+  .preloader__progress {
+    width: 200px;
+  }
+
+  .preloader__percentage {
+    font-size: 18px;
+  }
+}

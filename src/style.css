@@ -18,6 +18,14 @@
     font-weight: 900;
 }
 
+@media (min-width: 768px) {
+
+    body,
+    body * {
+        cursor: none !important;
+    }
+}
+
 #root {
     font-family: 'Museo';
     color: white;
@@ -96,6 +104,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 100px;
 }
 
 .preview__info {
@@ -117,16 +126,68 @@ h1 {
 
 .expirience {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .expirience__title {
     text-align: center;
 }
 
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.stat-card {
+    background: rgba(106, 26, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    background: rgba(106, 26, 255, 0.15);
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #6a1aff, #ff4d4d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
 .expirience__text {
     font-size: 20px;
 }
+
+/* Улучшаем читаемость текста */
+.experience__achievement-text {
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+/* Для светлой темы делаем контрастнее */
+#root:has(.experience__item_light) {
+    --text-light: #1a1a1a;
+}
+
+/* Оптимизация межстрочного интервала */
+.experience__achievement-text {
+    line-height: 1.6;
+}
+
 
 .stack {
     text-align: center;
@@ -217,7 +278,7 @@ h1 {
 @media screen and (max-width: 1333px) {
     .preview {
         margin-top: 100px;
-        justify-content: center ;
+        justify-content: center;
         text-align: center;
     }
 }
@@ -236,4 +297,3 @@ h1 {
         margin: auto;
     }
 }
-    

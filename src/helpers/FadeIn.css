@@ -1,10 +1,29 @@
+/* Базовые стили */
 .fade-in {
-    opacity: 0;
-    transform: translateY(20px); 
-    transition: opacity 1s ease-in, transform 1s ease;
-  }
-  
-  .fade-in.visible {
-    opacity: 1;
-    transform: translateY(0); 
-  }
+  opacity: 0;
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translate(0, 0) !important;
+}
+
+/* Направления */
+.fade-in--up {
+  transform: translateY(30px);
+}
+
+.fade-in--down {
+  transform: translateY(-30px);
+}
+
+.fade-in--left {
+  transform: translateX(-40px);
+}
+
+.fade-in--right {
+  transform: translateX(40px);
+}

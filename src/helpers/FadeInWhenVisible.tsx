@@ -3,9 +3,15 @@ import "./FadeIn.css";
 
 interface IFadeInWhenVisibleProps {
   children: ReactNode;
+  direction?: "up" | "down" | "left" | "right"; // 👈 добавляем направление
+  delay?: number; // 👈 опциональная задержка
 }
 
-function FadeInWhenVisible({ children }: IFadeInWhenVisibleProps) {
+function FadeInWhenVisible({ 
+  children, 
+  direction = "up",
+  delay = 0 
+}: IFadeInWhenVisibleProps) {
   const [isVisible, setIsVisible] = useState<boolean>(false);
   const ref = useRef<HTMLDivElement | null>(null);
 
@@ -34,7 +40,11 @@ function FadeInWhenVisible({ children }: IFadeInWhenVisibleProps) {
   }, []);
 
   return (
-    <div ref={ref} className={`fade-in ${isVisible ? "visible" : ""}`}>
+    <div 
+      ref={ref} 
+      className={`fade-in fade-in--${direction} ${isVisible ? "visible" : ""}`}
+      style={{ transitionDelay: `${delay}ms` }}
+    >
       {children}
     </div>
   );

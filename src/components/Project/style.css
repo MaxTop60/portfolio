@@ -4,9 +4,14 @@
     box-shadow: 0 0 8px 2px rgba(34, 60, 80, 0.2);
     border-radius: 10px;
     overflow: hidden;
-    min-height: 630px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     padding-bottom: 20px;
     background-color: rgb(234, 234, 234);
+}
+
+.projects__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
 
 .projects__item_dark {
@@ -92,6 +97,7 @@
     .projects__item {
         width: 350px;
     }
+
     .projects__item__img-container {
         height: 250px;
     }
@@ -101,6 +107,7 @@
     .projects__item {
         width: 250px;
     }
+
     .projects__item__img-container {
         height: 150px;
     }

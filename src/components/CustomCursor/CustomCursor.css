@@ -1,0 +1,42 @@
+.custom-cursor {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: #6a1aff;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: width 0.2s, height 0.2s, background 0.2s;
+  transform: translate(-50%, -50%);
+}
+
+.custom-cursor.hover {
+  width: 12px;
+  height: 12px;
+  background: #ff4d4d;
+  box-shadow: 0 0 15px rgba(255, 77, 77, 0.6);
+}
+
+.custom-cursor.click {
+  width: 5px;
+  height: 5px;
+}
+
+.custom-cursor-follower {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgba(106, 26, 255, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transition: width 0.2s, height 0.2s, border-color 0.2s;
+  transform: translate(-50%, -50%);
+}
+
+.custom-cursor-follower.hover {
+  width: 45px;
+  height: 45px;
+  border-color: rgba(255, 77, 77, 0.6);
+  background: rgba(106, 26, 255, 0.1);
+}
